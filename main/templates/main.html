@@ -1,0 +1,130 @@
+{% extends 'pattern.html' %}
+
+{% load static %}
+
+{% block title %}Main{% endblock %}
+
+{% block container %}
+    <div id="box">
+        <div id="box-left">
+            <h1>Build your Bouquet</h1>
+            <div class="selects selects1">
+                <h3>Size</h3>
+                <div class="select select1">
+                    <div class="item">
+                        <img src="{% static 'img/size/small.jpg' %}" alt="">
+                        <p>Small</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/size/medium.jpg' %}" alt="">
+                        <p>Medium</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/size/large.jpg' %}" alt="">
+                        <p>Large</p>
+                    </div>
+                </div>
+            </div>
+            <div class="selects selects2">
+                <h3>Flowers</h3>
+                <div class="select select2">
+                    <div class="item">
+                        <img src="{% static 'img/flowers/peonies.jpg' %}" alt="">
+                        <p>Peonies</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/flowers/daisies.jpg' %}" alt="">
+                        <p>Daisies</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/flowers/gerberas.jpg' %}" alt="">
+                        <p>Gerberas</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/flowers/dianthus.jpg' %}" alt="">
+                        <p>Dianthus</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/flowers/sunflowers.jpg' %}" alt="">
+                        <p>Sunflowers</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/flowers/tulips.jpg' %}" alt="">
+                        <p>Tulips</p>
+                    </div>
+                </div>
+            </div>
+            <div class="selects selects3">
+                <h3>Package</h3>
+                <div class="select select3">
+                    <div class="item">
+                        <img src="{% static 'img/package/craft.jpg' %}" alt="">
+                        <p>Craft</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/package/white.jpg' %}" alt="">
+                        <p>White</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/package/blue.jpg' %}" alt="">
+                        <p>Blue</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/package/pink.jpg' %}" alt="">
+                        <p>Pink</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/package/green.jpg' %}" alt="">
+                        <p>Green</p>
+                    </div>
+                    <div class="item">
+                        <div id="img-without"></div>
+                        <p>Without</p>
+                    </div>
+                </div>
+            </div>
+            <div class="selects selects4">
+                <h3>Ribbons</h3>
+                <div class="select select4">
+                    <div class="item">
+                        <img src="{% static 'img/ribbons/ribbons1.jpg' %}" alt="">
+                        <p>#1</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/ribbons/ribbons2.jpg' %}" alt="">
+                        <p>#2</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/ribbons/ribbons3.jpg' %}" alt="">
+                        <p>#3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="box-right">
+            <div id="extra-text">
+                <div id="price">
+                    <h2>Price</h2>
+                    <h2>45$</h2>
+                </div>
+                <textarea placeholder="Add comment"></textarea>
+                <div id="btn">
+                    <button id="add">Add to card</button>
+                    <button id="make">Make a new Bouquet</button>
+                </div>
+            </div>
+            <div id="extra-img">
+                <div id="gallery-text">
+                    <h2>Bouquet gallery</h2>
+                    <div id="question">?</div>
+                </div>
+                <div id="gallery-img">
+                    <img src="{% static 'img/buoquets/buoquet1.jpg' %}" alt="">
+                    <img src="{% static 'img/buoquets/buoquet2.jpg' %}" alt="">
+                    <img src="{% static 'img/buoquets/buoquet3.jpg' %}" alt="">
+                    <img src="{% static 'img/buoquets/buoquet4.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
